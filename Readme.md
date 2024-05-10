@@ -42,5 +42,24 @@ $ docker ps
 ```
 $ docker ps -a
 ```
+
+- Supprimer un container
+```
+$ docker rm container_id___OR__container_name
+```
+
+## Creation des images docker.
+Les images docker sont créées avec un fichier appélé Dockerfile
+```
+FROM debian:12.5
+
+RUN apt-get update && apt-get install -y python3
+
+
+```
+-  Construction de l'image
+```
+$ docker build -t nom_image:tag_image .
+```
 # References
 - https://docs.docker.com/engine/install/ubuntu/
