@@ -19,16 +19,16 @@ $ sudo usermod -aG docker $USER
 Après ajout de l'utilisateur on redemare la machine
 
 ## Commandes de base de docker
-- Lister les images
+*Lister les images
 ```
 $ docker images
 ```
-- Recuperer une  images
+*Recuperer une  images
 ```
 $ docker pull nom_image:tag_image
 ```
 
--  Demarrer un container docker
+* Demarrer un container docker
 ```
 $ docker run --name container_name -it nom_image:tag_image {CMD- optionnelle}
 ```
@@ -61,7 +61,7 @@ RUN apt-get update && apt-get install -y python3
 
 
 ```
--  Construction de l'image
+  Construction de l'image
 ```
 $ docker build -t nom_image:tag_image .
 ```
@@ -99,4 +99,5 @@ $ sudo service apache2 status
 
 
 # References
-- https://docs.docker.com/engine/install/ubuntu/
+* https://docs.docker.com/engine/install/ubuntu/
+* https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04
