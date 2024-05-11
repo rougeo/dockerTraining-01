@@ -47,6 +47,10 @@ $ docker ps -a
 ```
 $ docker rm container_id___OR__container_name
 ```
+* Accèder à un container en shell
+```
+$ docker exec -it container_id__OR__container_name sh
+```
 
 ## Creation des images docker.
 Les images docker sont créées avec un fichier appélé Dockerfile
@@ -61,5 +65,38 @@ RUN apt-get update && apt-get install -y python3
 ```
 $ docker build -t nom_image:tag_image .
 ```
+
+## Docker Compose
+### Installation
+Docker compose est dejà installé en tant que plugin docker
+### Exemple
+```
+version: "3.9"
+services:
+  site-1:
+    image: ubuntu/apache2:2.4-21.10_edge
+    container_name: test2
+    ports:
+      - 8086:80
+```
+### Commandes de bases
+* Demarrer les services
+```
+$ docker compose up -d
+```
+
+# Apache2 
+## Installation
+```
+$ sudo apt-get update
+$ sudo apt-get install apache2
+```
+## Valider l'Installation
+
+```
+$ sudo service apache2 status
+```
+
+
 # References
 - https://docs.docker.com/engine/install/ubuntu/
