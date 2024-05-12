@@ -1,4 +1,18 @@
 # Docker Tuto
+Dans ce projet, nous explorons les concepts suivants :
+- Docker
+- Les serveurs tels qu'Apache2.
+
+Nous aborderons divers sujets, de l'installation de Docker au déploiement d'une application en utilisant Apache2 ou simplement Docker. 
+Ce projet couvrira les notions de :
+- Conteneurs
+- Images
+- Dockerfile
+- Docker-compose
+- Réseaux
+- Ports
+
+Nous discuterons également de la taille des images Docker et du mapping de ports.
 
 ## Installation
 
