@@ -1,5 +1,11 @@
 # Docker Tuto
 
+## Concepts
+* Images
+* Containers
+* Networks
+* Volumes
+
 ## Installation
 
 ### Script
@@ -84,6 +90,11 @@ services:
 ```
 $ docker compose up -d
 ```
+
+### A retenir
+* Chaque container docker possède:
+  * Une adress ip
+  * Un nom de domain au moins qui correspond au nom du container
 
 # Apache2 
 ## Installation
