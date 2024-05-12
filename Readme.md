@@ -13,13 +13,20 @@ Ce projet couvrira les notions de :
 - Ports
 
 Nous discuterons également de la taille des images Docker et du mapping de ports.
+## Clonage du projet
 
+Pour travailler sur ce projet, vous pouvez soit le cloner, soit le forker.
+
+Pour le cloner, utilisez la commande :
+```
+$ git clone git@github.com:rougeo/dockerTraining-01.git  
+```
 ## Installation
 
 ### Script
 ```
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
+$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sudo sh get-docker.sh
 ```
 ### Validation de l'Installation
 ````
