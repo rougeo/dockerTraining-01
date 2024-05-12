@@ -11,6 +11,7 @@ Ce projet couvrira les notions de :
 - Docker-compose
 - Réseaux
 - Ports
+- Nginx
 
 Nous discuterons également de la taille des images Docker et du mapping de ports.
 ## Clonage du projet
