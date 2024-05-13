@@ -1,0 +1,18 @@
+services:
+  proxy:
+    build: .
+    image: proxy-server:v0
+    container_name: proxy-server
+    ports:
+      - 80:80
+    volumes:
+      - ./index.html:/var/www/html/index.html
+    networks:
+      - default
+
+networks:
+  default:
+    name: proxy-net
+    driver: bridge
+    external: false
+      

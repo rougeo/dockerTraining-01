@@ -1,0 +1,48 @@
+services:
+  site-1:
+    image: ubuntu/apache2:2.4-21.10_edge
+    container_name: site1
+    volumes:
+      - ./site1:/var/www/html
+    ports:
+      - 8081:80
+    networks:
+      - default
+      - proxy-net
+
+      
+  site-2:
+    image: ubuntu/apache2:2.4-21.10_edge
+    container_name: site2_container
+    volumes:
+      - ./site2:/var/www/html
+    ports:
+      - 8082:80
+    networks:
+      - default
+      - proxy-net
+
+  site-3:
+    image: nginx:1.26.0-alpine3.19
+    container_name: site3_ct
+    ports:
+      - 8083:80
+    volumes:
+      - ./site3:/usr/share/nginx/html
+    networks:
+      default:
+      proxy-net:
+        aliases:
+          - site.com 
+          - facebook.com
+
+networks:
+  default:
+    name: website-net
+    driver: bridge
+    external: false
+  proxy-net:
+    external: true
+      
+
+      
