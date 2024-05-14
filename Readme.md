@@ -1,17 +1,36 @@
 # Docker Tuto
+Dans ce projet, nous explorons les concepts suivants :
+* Docker
+* Les serveurs tels qu'Apache2.
 
+Nous aborderons divers sujets, de l'installation de Docker au déploiement d'une application en utilisant Apache2 ou simplement Docker. 
+Ce projet couvrira différents concepts.
 ## Concepts
 * Images
 * Containers
 * Networks
 * Volumes
+* Dockerfile
+* Docker-compose
+* Ports
+* Nginx
+
+Nous discuterons également de la taille des images Docker.
+## Clonage du projet
+
+Pour travailler sur ce projet, vous pouvez soit le cloner, soit le forker.
+
+Pour le cloner, utilisez la commande :
+```
+$ git clone git@github.com:rougeo/dockerTraining-01.git  
+```
 
 ## Installation
 
 ### Script
 ```
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
+$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sudo sh get-docker.sh
 ```
 ### Validation de l'Installation
 ````
